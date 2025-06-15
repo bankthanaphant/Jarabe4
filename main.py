@@ -1,11 +1,12 @@
 # 👉 Code for Stage 6 goes here
 class Student:
-    def __init__(self, f_name, l_name, age, courses, money):
+    def __init__(self, f_name, l_name, age, courses, salary):
         self.f_name = f_name
         self.l_name = l_name
         self.age = age
         self.courses = courses
-        self.money = money
+        self.money = 0
+        self.salary = salary
         
     def fullname(self):
         return self.f_name + " " + self.l_name
