@@ -6,10 +6,14 @@ class Student:
         self.age = age
         self.courses = courses
         self.money = money
-
+        
+    def fullname(self):
+        return self.f_name + " " + self.l_name
+        
     def display_student_info(student):
         print("FirstName:", student.f_name)
         print("LastName:", student.l_name)
+        print(student.fullname())
         print("Age:", student.age)
         print("Courses:", ", ".join(student.courses))
         print("Money: ", student.money)
